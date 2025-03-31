@@ -1,1 +1,8 @@
 services:
+  mongodb:
+    image: mongodb/mongodb-community-server:5.0.26-ubuntu2004
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
